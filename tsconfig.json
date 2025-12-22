@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "skipLibCheck": true,
+    "lib": [ "ESNext" ],
+    "module": "CommonJS",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "es-build.ts",
+    "local-testing/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*",
+    "src/test/**",
+    "./cypress.config.ts",
+    "cypress/**/*"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}

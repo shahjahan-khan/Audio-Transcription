@@ -47,7 +47,7 @@ export default class TranscriptionService {
             console.error('Error in getTranscriptions:', error);
             throw new AppError(500, "Failed to retrieve transcriptions");
         }
-    }2
+    }
 
     private  async mockDownloadAudio(audioUrl: string): Promise<void> {
         return new Promise((resolve) => {
